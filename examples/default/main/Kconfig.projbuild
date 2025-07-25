@@ -10,5 +10,5 @@ menu "Example configuration"
             bool "TSYS01_I2C_ADDR2 (0x77)"
     endchoice
 
-    rsource "../../../../devtools/Kconfig.i2c"
+    rsource "../../../Kconfig.i2c"
 endmenu
