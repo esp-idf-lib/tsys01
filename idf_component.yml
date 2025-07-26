@@ -1,5 +1,5 @@
 ---
-version: 1.0.1
+version: 1.0.2
 description: Driver for precision digital temperature sensor TSYS01
 license: BSD-3
 targets:
