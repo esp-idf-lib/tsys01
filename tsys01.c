@@ -70,9 +70,9 @@ static esp_err_t send_cmd(tsys01_t *dev, uint8_t cmd)
 inline static float calc_temp(tsys01_t *dev, uint16_t raw)
 {
     return -2.0f * dev->cal[1] / 1000000000000000000000.0f * raw * raw * raw * raw +
-            4.0f * dev->cal[2] / 10000000000000000.0f * raw * raw * raw +
+           4.0f * dev->cal[2] / 10000000000000000.0f * raw * raw * raw +
            -2.0f * dev->cal[3] / 100000000000.0f * raw * raw +
-            1.0f * dev->cal[4] / 1000000.0f * raw +
+           1.0f * dev->cal[4] / 1000000.0f * raw +
            -1.5f * dev->cal[5] / 100.0f;
 }
 
