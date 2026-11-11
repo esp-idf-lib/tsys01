@@ -1,7 +1,7 @@
 ---
 version: 1.0.8
 description: Driver for precision digital temperature sensor TSYS01
-license: BSD-3
+license: BSD-3-Clause
 dependencies:
   esp-idf-lib/i2cdev:
     version: "*"
